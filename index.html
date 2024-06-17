@@ -161,7 +161,7 @@ font-weight: bold;
     <script>
 function search() {
     const searchInput = document.getElementById('searchInput').value;
-    fetch('https://c199f089-7872-404c-bd01-4ca9f25c68f9-00-1segf5tiw7qzc.worf.replit.dev/search', {
+    fetch('https://classifiedads.pythonanywhere.com/search', {
         method: 'GET',
         headers: {
             'query': searchInput,
@@ -221,7 +221,7 @@ function search() {
 }
 
         function report(id) {
-            fetch('https://c199f089-7872-404c-bd01-4ca9f25c68f9-00-1segf5tiw7qzc.worf.replit.dev/report', {
+            fetch('https://classifiedads.pythonanywhere.com/report', {
                 method: 'GET',
                 headers: {
                     'id': id
