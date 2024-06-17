@@ -74,7 +74,7 @@
             const adminname = document.getElementById('adminname').value;
             const password = document.getElementById('password').value;
 
-            fetch('https://c199f089-7872-404c-bd01-4ca9f25c68f9-00-1segf5tiw7qzc.worf.replit.dev/verify', {
+            fetch('https://classifiedads.pythonanywhere.com/verify', {
                 method: 'POST',
                 headers: {
                     'adminname': adminname,
@@ -93,7 +93,7 @@
             });
         });
 function fetchItems(adminname, password) {
-    fetch('https://c199f089-7872-404c-bd01-4ca9f25c68f9-00-1segf5tiw7qzc.worf.replit.dev/results', {
+    fetch('https://classifiedads.pythonanywhere.com/results', {
         headers: {
             'adminname': adminname,
             'password': password
@@ -133,7 +133,7 @@ function fetchItems(adminname, password) {
             const adminname = document.getElementById('adminname').value;
             const password = document.getElementById('password').value;
 
-            fetch(`https://c199f089-7872-404c-bd01-4ca9f25c68f9-00-1segf5tiw7qzc.worf.replit.dev/${moderate ? 'moderate_on' : 'moderate_off'}`, {
+            fetch(`https://classifiedads.pythonanywhere.com/${moderate ? 'moderate_on' : 'moderate_off'}`, {
                 method: 'POST',
                 headers: {
                     'adminname': adminname,
@@ -147,7 +147,7 @@ function fetchItems(adminname, password) {
             const adminname = document.getElementById('adminname').value;
             const password = document.getElementById('password').value;
 
-            fetch(`https://c199f089-7872-404c-bd01-4ca9f25c68f9-00-1segf5tiw7qzc.worf.replit.dev/${shutdown ? 'shutdown_on' : 'shutdown_off'}`, {
+            fetch(`https://classifiedads.pythonanywhere.com/${shutdown ? 'shutdown_on' : 'shutdown_off'}`, {
                 method: 'POST',
                 headers: {
                     'adminname': adminname,
@@ -161,7 +161,7 @@ function fetchItems(adminname, password) {
             const adminname = document.getElementById('adminname').value;
             const password = document.getElementById('password').value;
 
-            fetch('https://c199f089-7872-404c-bd01-4ca9f25c68f9-00-1segf5tiw7qzc.worf.replit.dev/banip', {
+            fetch('https://classifiedads.pythonanywhere.com/banip', {
                 method: 'POST',
                 headers: {
                     'ip': ip,
@@ -175,7 +175,7 @@ function fetchItems(adminname, password) {
             const adminname = document.getElementById('adminname').value;
             const password = document.getElementById('password').value;
 
-            fetch('https://c199f089-7872-404c-bd01-4ca9f25c68f9-00-1segf5tiw7qzc.worf.replit.dev/approve', {
+            fetch('https://classifiedads.pythonanywhere.com/approve', {
                 method: 'POST',
                 headers: {
                     'id': id,
@@ -189,7 +189,7 @@ function fetchItems(adminname, password) {
             const adminname = document.getElementById('adminname').value;
             const password = document.getElementById('password').value;
 
-            fetch('https://c199f089-7872-404c-bd01-4ca9f25c68f9-00-1segf5tiw7qzc.worf.replit.dev/ignore', {
+            fetch('https://classifiedads.pythonanywhere.com/ignore', {
                 method: 'POST',
                 headers: {
                     'id': id,
