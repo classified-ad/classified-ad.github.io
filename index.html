@@ -69,6 +69,17 @@ font-weight: bold;
         .button-container button {
             margin-left: 10px;
         }
+	            #entry_type {
+
+                width: 350px;
+                height: 34px;
+                background: #191a18;
+                color:white;
+                font-weight:bold;
+                                font-size: 1em;
+
+        }
+
         #searchResults {
             display: flex;
             flex-wrap: wrap;
@@ -187,8 +198,10 @@ function search() {
                 resultDiv.classList.add('search-result');
 
                 let innerHTML = '';
-
-                if (result.title) {
+		    
+		innerHTML += `<div id='entry_type'><p>${result.entry_type}</p></div>`;
+                
+		if (result.title) {
                     innerHTML += `<h2>${result.title}</h2>`;
                 }
                 if (result.description) {
@@ -204,7 +217,7 @@ function search() {
                     innerHTML += `<p><strong>Email:</strong> ${result.email}</p>`;
                 }
                 if (result.website) {
-                    innerHTML += `<button class="visit-button" onclick="window.location.href='${result.website}'">Website</button>`;
+                    innerHTML += `<a href='https://${result.website}'><button class="visit-button">Website</button></a>`;
                 }
                 if (result.title || result.description || result.location || result.phonenum || result.email) {
                     innerHTML += `<div class="report-button-container">
